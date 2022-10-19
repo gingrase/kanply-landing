@@ -4,6 +4,15 @@ body {
     align-items: center;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    background: black;
+    background-image: url(./images/background-code.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+    color: #e5e7eb;
 }
 
 /* ************************************************************ */
@@ -50,13 +59,12 @@ body {
 /* ***  top                                                 *** */
 /* ***      hero                                            *** */
 /* ***          title                                       *** */
-/* ***          subtext                                     *** */
-/* ***          button                                      *** */
+/* ***          top_text                                     *** */
+/* ***          more_button                                 *** */
 /* ***      image                                           *** */
 /* ************************************************************ */
 
 .top {
-    background: #1f2937;
     font-size: 18px;
     color: #e5e7eb;
     display: flex;
@@ -71,15 +79,22 @@ body {
     font-size: 48px;
     font-weight: bolder;
     color: #f9faf8;
+    text-shadow:
+        0 0 7px black,
+        0 0 12px black;
 }
 
-.subtext {
+.top_text {
     margin-top: 12px;
+    text-shadow:
+        0 0 8px black,
+        0 0 20px darkslategray;
 }
 
-.button {
+.more_button {
     margin-top: 24px;
     background-color: #3882f6;
+    color: #f9faf8;
     border: none;
     border-radius: 8px;
     padding: 8px 24px;
@@ -98,7 +113,7 @@ body {
 /* *** Structure                                            *** */
 /* *** =========                                            *** */
 /* ***  center                                              *** */
-/* ***      center_title                                           *** */
+/* ***      center_title                                    *** */
 /* ***      center_items                                    *** */
 /* ***          center_item                                 *** */
 /* ***              image                                   *** */
@@ -106,6 +121,7 @@ body {
 /* ************************************************************ */
 
 .center {
+    background-color: #f9faf8;
     font-size: 36px;
     font-weight: bolder;
     color: #1f2937;
@@ -134,7 +150,10 @@ body {
 }
 
 .image {}
-.subtext {}
+
+.subtext {
+    margin-top: 12px;
+}
 
 /* ************************************************************ */
 /* ***                   QUOTE SECTION                      *** */
@@ -192,8 +211,9 @@ body {
 .cta_subtext {}
 
 .cta_button {
+    background-color: #3882f6;
+    color: #f9faf8;
     border-radius: 8px;
-    width: fit-content;
     border: #f9faf8;
     border-width: 2px;
     border-style: solid;
