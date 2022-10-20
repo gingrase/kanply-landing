@@ -8,6 +8,7 @@ body {
     background-image: url(./images/background-code.jpeg);
     background-size: cover;
     background-attachment: fixed;
+    font-size: 18px;   
 }
 
 a {
@@ -15,20 +16,10 @@ a {
     color: #e5e7eb;
 }
 
-/* ************************************************************ */
-/* ***                       HEADER                         *** */
-/* ***                                                      *** */
-/* *** Structure                                            *** */
-/* *** =========                                            *** */
-/* ***  header                                              *** */
-/* ***      logo                                            *** */
-/* ***      top_menu                                        *** */
-/* ***          menu_item                                   *** */
-/* ************************************************************ */
+
 
 .header {
     background: black;
-    font-size: 18px;
     color: #e5e7eb;
     display: flex;
     justify-content: space-between;
@@ -38,8 +29,6 @@ a {
   
 .logo {
     height: 48px;
-    font-size: 24px;
-    color: #f9faf8;
 }
 
 .top_menu {
@@ -47,38 +36,23 @@ a {
     gap: 36px;
 }
 
-.menu_item {
-
+.top_menu {
+    flex-shrink: 0;
 }
 
-/* ************************************************************ */
-/* ***                   "HERO" SECTION                     *** */
-/* ***                                                      *** */
-/* *** Structure                                            *** */
-/* *** =========                                            *** */
-/* ***  top                                                 *** */
-/* ***      hero                                            *** */
-/* ***          title                                       *** */
-/* ***          top_text                                     *** */
-/* ***          more_button                                 *** */
-/* ***      image                                           *** */
-/* ************************************************************ */
+
 
 .top {
-    font-size: 18px;
-    color: #e5e7eb;
+    color: #f9faf8;
     display: flex;
     align-items: center;
-}
-
-.hero {
     padding: 48px;
+    gap: 48px;
 }
 
 .title {
     font-size: 48px;
     font-weight: bolder;
-    color: #f9faf8;
     text-shadow:
         0 0 7px black,
         0 0 12px black;
@@ -98,41 +72,28 @@ a {
     border: none;
     border-radius: 8px;
     padding: 8px 24px;
-    width: fit-content;
 }
 
 #hero_image {
-    padding: 48px;
     width: 50%;
     height: auto;
 }
 
-/* ************************************************************ */
-/* ***                   CENTER SECTION                     *** */
-/* ***                                                      *** */
-/* *** Structure                                            *** */
-/* *** =========                                            *** */
-/* ***  center                                              *** */
-/* ***      center_title                                    *** */
-/* ***      center_items                                    *** */
-/* ***          center_item                                 *** */
-/* ***              image                                   *** */
-/* ***              subtext                                 *** */
-/* ************************************************************ */
+
 
 .center {
     background-color: #f9faf8;
-    font-size: 36px;
-    font-weight: bolder;
     color: #1f2937;
     display: flex;
     flex-direction: column;
     padding: 36px 48px 72px;
     gap: 36px;
+    text-align: center;
 }
 
 .center_title {
-    text-align: center;
+    font-weight: bolder;
+    font-size: 36px;
 }
 
 .center_items {
@@ -143,55 +104,33 @@ a {
 }
 
 .center_item {
-    text-align: center;
-    font-size: 18px;
     font-weight: 300;
     width: 200px;
 }
-
-.image {}
 
 .subtext {
     margin-top: 12px;
 }
 
-/* ************************************************************ */
-/* ***                   QUOTE SECTION                      *** */
-/* ***                                                      *** */
-/* *** Structure                                            *** */
-/* *** =========                                            *** */
-/* ***  quote                                               *** */
-/* ***      quote_text                                      *** */
-/* ***      quote_signature                                 *** */
-/* ************************************************************ */
+
 
 .quote {
-    background-color: #E5E7EB;
+    background-color: #e5e7eb;
     font-size: 36px;
     font-style: italic;
     font-weight: lighter;
     color: #1f2937;
-    padding: 72px 96px 72px 96px;
+    padding: 72px 96px;
 }
 
 .quote_signature {
     text-align: right;
     font-size: 24px;
     font-weight: bolder;
-    padding-right: 100px;
+    margin-right: 100px;
 }
 
-/* ************************************************************ */
-/* ***              CALL TO ACTION SECTION                  *** */
-/* ***                                                      *** */
-/* *** Structure                                            *** */
-/* *** =========                                            *** */
-/* ***  cta                                                 *** */
-/* ***      cta_text                                        *** */
-/* ***          cta_title                                   *** */
-/* ***          cta_subtext                                 *** */
-/* ***      cta_button                                      *** */
-/* ************************************************************ */
+
 
 .cta {
     margin: 36px 48px;
@@ -208,8 +147,6 @@ a {
     font-weight: bolder;
 }
 
-.cta_subtext {}
-
 .cta_button {
     background-color: #3882f6;
     color: #f9faf8;
@@ -218,35 +155,15 @@ a {
     border-width: 2px;
     border-style: solid;
     padding: 4px 36px; 
+    flex-shrink: 0;
 }
 
-/* ************************************************************ */
-/* ***                        FOOTER                        *** */
-/* ***                                                      *** */
-/* *** Structure                                            *** */
-/* *** =========                                            *** */
-/* ***  footer                                              *** */
-/* ************************************************************ */
+
 
 .footer {
     background-color: #1f2937;
-    color: #E5E7EB;
+    color: #e5e7eb;
     display: flex;
     justify-content: center;
     padding: 24px;
 }
-
-
-
-
-/*
-
-Examples
-========  
-    box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
-    border-radius: 50%;
-  
-    border-bottom: 1px solid #ddd;
-    box-shadow: 0 0 8px rgba(0,0,0,.1);
-
-*/
